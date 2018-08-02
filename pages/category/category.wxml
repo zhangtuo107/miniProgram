@@ -1,0 +1,26 @@
+<!--pages/category/category.wxml-->
+<view class='category'>
+  <view class='categoryHead'>
+    <view class='categoryInput'>
+      <input type='text' maxlength='10' placeholder='请输入商品名' placeholder-style='color:#2f3603'></input>
+    </view>
+  </view>
+  <view class='contain'>
+    <scroll-view scroll-y="true" class='left-navbar' style='height:{{useHeight}}'>
+      <view wx:for="{{wareList}}" wx:key="{{id}}" bindtap='clickLeft' data-index='{{index}}' class='{{clickIndex == index ? "active" : ""}}'>
+        {{item.leftNav.title}}
+      </view>
+    </scroll-view>
+    <scroll-view class='right' scroll-y="true" scroll-top="0" style='width:{{useWidth}};height:{{useHeight}}'>
+      <view class='menuTitle'>
+        {{wareList[clickIndex].rightTitle}}
+      </view>
+      <block wx:for="{{wareList[clickIndex].rightList}}" wx:key="{{index}}">
+        <view class='rightItem'>
+          <image src='{{item.listImg}}' class='rightImg'></image>
+          <text>{{item.listTitle}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,51 @@
+<!--pages/personal/personal.wxml-->
+<view class='personal'>
+  <view class='banner'>
+    <view class='headContain'>
+       <view class='userAvatar'>
+        <open-data type="userAvatarUrl" class='openImg' ></open-data> 
+      </view> 
+       <view class='userName'>
+        <view>
+          <open-data type="userNickName"></open-data> 
+        </view>
+        <view class='userNickName'>
+          用户名：
+          <open-data type="userNickName"></open-data> 
+        </view>
+      </view> 
+    </view>
+  </view>
+  <view class='orderList'>
+    <block wx:for='{{orderList}}' wx:key='{{index}}'>
+      <view>
+        <image src='{{item.orderPath}}'></image>
+        <text>{{item.orderTitle}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='orderList'>
+    <block wx:for='{{assetList}}' wx:key='{{index}}'>
+      <view>
+        <view class='assetNum'>{{item.assetNum}}</view>
+        <text>{{item.assetTitle}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='orderList'>
+    <block wx:for='{{trackList}}' wx:key='{{index}}'>
+      <view>
+        <view class='trackNum'>{{item.trackNum}}</view>
+        <text>{{item.trackTitle}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='orderList'>
+    <block wx:for='{{myCar}}' wx:key='{{index}}'>
+      <view>
+        <image src='{{item.myCarPath}}'></image>
+        <text>{{item.myCarTitle}}</text>
+      </view>
+    </block>
+  </view>
+</view>

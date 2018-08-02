@@ -1,0 +1,59 @@
+<view class='facePage'>
+  <swiper class="banner" indicator-dots="{{true}}" autoplay="{{true}}" indicator-active-color="{{'#327ae3'}}" circular='{{true}}'>
+    <block wx:for="{{slides}}" wx:key='{{item.index}}'>
+      <swiper-item>
+        <image lazy-load='{{true}}' src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='searchInput'>
+    <input maxlength='10' placeholder='请输入商品名' placeholder-style='color:#2f3603' type='text'/>
+  </view>
+  <view class='firstMenu'>
+    <block wx:for="{{menuList}}" wx:key="{{item.index}}">
+      <view bindtap="clickgoods" data-goodsInfo="{{item}}">
+        <image src='{{item.swiperImg}}' class='menuImg'/>
+        <text class='goodsTitle'>{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='secondMenu'>
+    <text class='bigTitle'>京东拼购</text>
+    <text class='smallTitle'>大家都在拼</text>
+    <swiper class='secondBinner' circular='{{true}}' display-multiple-items="{{4}}" >
+      <block wx:for="{{secondMenuList}}" wx:key='{{item.index}}'>
+        <!-- <swiper-item bindtap="clickgoods" data-goodsPath="{{item}}"> -->
+        <swiper-item bindtap="clickgoods" data-goodsInfo="{{item}}">
+          <image lazy-load='{{true}}' src='{{item.swiperImg}}' class='secondImg'/>
+          <text class='itemPrice'>￥{{item.price}}</text>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='secKill'>
+    <view class='secLeft'>
+      <text class='secLeftTitle'>京东秒杀</text>
+      <text class='secLeftSmallTitle'>10点场</text>
+      <view class='leftBox'>
+        <view class='boxItem'>
+          <image src='../../images/secKill.jpg' class='secImg'/>
+          <text class='secPrice'>￥259</text>
+        </view>
+        <view class='boxItem'>
+          <image src='../../images/secKill.jpg' class='secImg'/>
+          <text class='secPrice'>￥259</text>
+        </view>
+      </view>
+    </view>
+    <view class='secMiddle'>
+      <text class='secLeftTitle'>有好货</text>
+      <text class='secLeftSmallTitle'>买家推荐</text>
+      <image src='../../images/secKill.jpg' class='goodImg'/>
+    </view>
+    <view class='secRight'>
+      <text class='secLeftTitle'>赢福利</text>
+      <text class='secLeftSmallTitle'>146万人玩</text>
+      <image src='../../images/secKill.jpg' class='goodImg'/>
+    </view>
+  </view>
+</view>

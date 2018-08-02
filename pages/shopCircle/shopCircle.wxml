@@ -1,0 +1,44 @@
+<!--pages/shopCircle/shopCircle.wxml-->
+<view class='shopCircle'>
+  <scroll-view class='circleContain'>
+    <view wx:for="{{circleList}}" wx:key="{{index}}" class='circleItem' data-itemIndex='{{index}}' bindtap='getIndex'>
+      <view class='itemTop'>
+        <image src='{{item.peopleImg}}' class='topImg'></image>
+        <text>{{item.peopleName}}</text>
+      </view>
+      <view class='itemDescript'>
+        <text>{{item.peopleDescript}}</text>
+      </view>
+      <view class='itemShareImg'>
+        <image wx:for='{{item.shareImg}}' wx:key="{{index}}" src='{{item}}' data-index='{{index}}' bindtap='prewImg'></image>
+      </view>
+      <view class='itemFoot'>
+        <view>
+          <image src='{{item.goodsImg}}'></image>
+        </view>
+        <view class='footText'>
+          <view class='footTitle'>{{item.goodsTitle}}</view>
+          <view class='giftPrice'>￥{{item.goodsPrice}}</view>
+        </view>
+      </view>
+      <view class='itemAdd'>
+        <view class='readNum'>
+          <text>{{item.shareMethods}}</text> | 
+          <text>{{item.visitedNum}}人已阅读</text>
+        </view>
+        <view class='giveLikeBox'>
+          <view class='likeBoxLeft'>
+            <image src='../../images/heart.png'></image>
+            <text>{{item.likeNum}}</text>
+          </view>
+          <view>
+            <image src='../../images/talk.png'></image>
+            <text>评论</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </scroll-view>
+
+</view>

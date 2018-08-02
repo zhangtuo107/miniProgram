@@ -1,0 +1,26 @@
+<!--pages/cart/cart.wxml-->
+<view class='cart'>
+  <view class='goodsMenu'>
+    <scroll-view scroll-y='{{true}}' style='height:{{useHeight}}'>
+      <block wx:for="{{getGoods}}" wx:key="{{item.index}}">
+        <view class='goodsItem'>
+          <image src='{{item.swiperImg}}'/>
+          <text>￥{{item.price}}</text>
+          <text class='numTitle'>数量</text>
+          <text class='subNum' bindtap='subNum' data-index='{{index}}'>-</text>
+          <text>{{item.num}}</text>
+          <text class='addNum' bindtap='addNum' data-index='{{index}}'>+</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class='totalBox'>
+    <view class='goAccount'>
+      去结算<text class='totalNum'>({{totalNum}}件)</text>
+    </view>
+    <view class='totalPriceBox'>
+      <text>总计:</text>
+      <text class='totalPrice'>￥{{totalPrice}}</text>
+    </view>
+  </view> 
+</view>

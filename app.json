@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/facePge/facePge",
+    "pages/category/category",
+    "pages/shopCircle/shopCircle",
+    "pages/cart/cart",
+    "pages/personal/personal",
+    "pages/goodsDetail/goodsDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ztShoppingMall",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/facePge/facePge",
+        "text": "首页",
+        "iconPath": "images/packageNone.png",
+        "selectedIconPath": "images/packageRed.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "images/sortNone.png",
+        "selectedIconPath": "images/sortRed.png"
+      },
+      {
+        "pagePath": "pages/shopCircle/shopCircle",
+        "text": "购物圈",
+        "iconPath": "images/gouWuQuanNone.png",
+        "selectedIconPath": "images/gouWuQuanRed.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/shopCarNone.png",
+        "selectedIconPath": "images/shopCarRed.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "images/myNone.png",
+        "selectedIconPath": "images/myRed.png"
+      }
+    ],
+    "color": "#7d868d",
+    "selectedColor": "#d32e7d",
+    "backgroundColor": "#fff",
+    "borderStyle": "#d7d7d7"
+  }
+}

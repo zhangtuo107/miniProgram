@@ -1,0 +1,38 @@
+<!--pages/goodsDetail/goodsDetail.wxml-->
+<view class='goodsDetail'>
+  <view class='banner'>
+    <image src='{{goodsDetail.swiperImg}}'></image>
+  </view>
+  <view class='goodsInfo'>
+    <view class='goodsName'>
+      商品名称：<text class='nameDetail'>{{goodsDetail.title}}</text>
+    </view>
+    <view class='goodSize'>
+      商品尺寸：<text class='sizeDetail'>{{goodsDetail.size}}</text>
+    </view>
+    <view class='goodsPrice'>
+      商品价格：<text class='priceDetail'>￥{{goodsDetail.price}}</text>
+    </view>
+    <view class='goodsJudge'>
+      商品评价：
+      <!-- <text class='judgeDetail'>很好</text> -->
+      <view class='starBox'>
+        <view class='noColorStar'>
+          <image src='../../images/no_color_star.png' />
+          <image src='../../images/no_color_star.png' />
+          <image src='../../images/no_color_star.png' />
+          <image src='../../images/no_color_star.png' />
+          <image src='../../images/no_color_star.png' />
+        </view>
+        <view class='yellowStar' style='width:{{starWidth}}'>
+          <image src='../../images/yellowStar.png' />
+          <image src='../../images/yellowStar.png' />
+          <image src='../../images/yellowStar.png' />
+          <image src='../../images/yellowStar.png' />
+          <image src='../../images/yellowStar.png' />
+        </view>
+      </view>
+    </view>
+    <view class='addCart' bindtap="addCart">加入购物车</view>
+  </view>
+</view>

@@ -1,0 +1,101 @@
+/* pages/shopCircle/shopCircle.wxss */
+.circleItem{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+.itemTop{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 14px;
+  color: #333333;
+}
+.topImg{
+  width: 60rpx;
+  height: 60rpx;
+  display:inline-block;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+.itemDescript,.itemAdd{
+  padding-left: 80rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+}
+.itemShareImg{
+  padding-left: 60rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+}
+.itemDescript{
+  color: #333333;
+  font-size: 16px;
+}
+.itemDescript{
+  color: #333333;
+  font-size: 16px;
+}
+.itemShareImg{
+  width: 100%;
+  display: flex;
+}
+.itemShareImg image{
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: 20rpx;
+  display: inline-block;
+}
+.itemFoot{
+  margin-left: 80rpx;
+  margin-top: 20rpx;
+  height: 200rpx;
+  background: #f7f7f7;
+  padding: 16rpx;
+  box-sizing: border-box;
+  display: flex;
+}
+.itemFoot image{
+  width: 120rpx;
+  height: 170rpx;
+  display: block;
+}
+.footTitle{
+  color: #333333;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 20rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.giftPrice{
+  color: #dc4043;
+  margin-left: 10rpx;
+  margin-top: 20rpx;
+  font-size: 14px;
+  font-weight: 700;
+}
+.itemAdd{
+  color: #999999;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.giveLikeBox{
+  display: flex;
+}
+.giveLikeBox image{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4rpx;
+}
+.likeBoxLeft{
+  margin-right: 20rpx;
+}

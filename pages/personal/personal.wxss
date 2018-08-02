@@ -1,0 +1,81 @@
+/* pages/personal/personal.wxss */
+.personal{
+  width: 100%;
+  background: #f7f7f7;
+}
+.banner{
+  height: 300rpx;
+  background: #ffffff;
+  border-top: 1rpx solid #dddddd;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.headContain{
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(to right, #ec3e3d , #ff7358);
+  border-radius: 10rpx;
+  display: flex;
+}
+ /* .userAvatar image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin: 80rpx 40rpx 80rpx 40rpx;
+}  */
+ .userAvatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin: 80rpx 40rpx 80rpx 40rpx;
+  overflow: hidden;
+} 
+.userName{
+  margin-top: 80rpx;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 300;
+}
+.userNickName{
+  color: #ffc1bf;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.orderList{
+  margin-top: 40rpx;
+  height: 200rpx;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 12px;
+  background: #ffffff;
+}
+.orderList view{
+  width: 140rpx; 
+  display: inline-block;
+}
+.orderList image{
+  width: 60rpx;
+  height: 60rpx;
+  display: block;
+  margin:0 auto;
+}
+.assetNum,.trackNum{
+  height: 60rpx;
+  display: block;
+  margin:0 auto;
+}
+.assetNum{
+  color: #e33d3f;
+  font-size: 14px;
+  font-weight: 700
+}
+.trackNum{
+  color: #333333;
+  font-size: 14px;
+  font-weight: 700
+}

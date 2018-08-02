@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 722152 */
+  src: url('//at.alicdn.com/t/font_722152_0a4a507eavlq.eot');
+  src: url('//at.alicdn.com/t/font_722152_0a4a507eavlq.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_722152_0a4a507eavlq.woff') format('woff'),
+  url('//at.alicdn.com/t/font_722152_0a4a507eavlq.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_722152_0a4a507eavlq.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gouwu:before { content: "\e600"; }
+
+.icon-msnui-cart:before { content: "\e672"; }
+
+.icon-leimupinleifenleileibie2:before { content: "\e7f8"; }
+
+.icon-wode:before { content: "\e630"; }
+
+.icon-gouwuche:before { content: "\e67d"; }
+
